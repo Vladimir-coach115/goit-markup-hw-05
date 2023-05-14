@@ -121,6 +121,9 @@ body {
 
 /* Посилання */
 
+.header-item {
+  /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
 .header-link {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -130,11 +133,35 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--primary-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
 }
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
 }
+.current {
+  /* display: flex; */
+  position: relative;
+  color: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+}
+/* .current:hover,
+.current:focus {
+  color: var(--accent-color);
+} */
+
 
 /* Адреса */
 
@@ -148,6 +175,9 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--mini-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
 }
 .header-contact-link:hover,
 .header-contact-link:focus {
@@ -209,6 +239,9 @@ body {
   color: var(--primary-white-color) ;
   background-color: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -377,6 +410,9 @@ gap: 24px;
   height: 100%;
   border-radius: 50%;
   background-color: var(--brand-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus {
@@ -425,6 +461,9 @@ background-color: var(--accent-color);
   border-radius: 4px;
   border: 1px solid #8e8f99;
   color: #8e8f99;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
   }
 .log-link:hover,
 .log-link:focus {
@@ -499,6 +538,9 @@ background-color: var(--accent-color);
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
@@ -549,12 +591,16 @@ background-color: var(--accent-color);
   text-align: center;
   cursor: pointer;
 }
+
 .btn-link {
   padding: 12px 24px;
   border-radius: 4px;
   border: 1px solid #e7e9fc;
   color: var(--brand-color);
-  /* background-color: var(--color-teamcard); */
+  background-color: var(--color-teamcard);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
 }
 .btn-link:hover,
 .btn-link:focus {
@@ -568,16 +614,21 @@ display: flex;
 flex-wrap: wrap;
 column-gap: 24px;
 row-gap: 48px; 
+outline: solid 1px blue;
 }
 .iteam {
   max-width: 360px;
   background: var(--primary-white-color);
   border: 1px solid #E7E9FC;
   width: calc((100%-48px)/3);
+  outline: solid 2px green;
 }
 
 .pic-link {
   display: block;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
 }
 .pic-link:hover,
 .pic-link:focus {
