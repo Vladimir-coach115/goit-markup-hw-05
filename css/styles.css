@@ -121,9 +121,6 @@ body {
 
 /* Посилання */
 
-/* .header-list {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
 .header-link {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -142,7 +139,6 @@ body {
 .current {
   position: relative;
   color: var(--accent-color);
-  /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .current::after {
   content: "";
@@ -228,7 +224,9 @@ body {
   color: var(--primary-white-color) ;
   background-color: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .open-btn:hover,
 .open-btn:focus {
@@ -397,7 +395,7 @@ gap: 24px;
   height: 100%;
   border-radius: 50%;
   background-color: var(--brand-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus {
@@ -446,7 +444,7 @@ background-color: var(--accent-color);
   border-radius: 4px;
   border: 1px solid #8e8f99;
   color: #8e8f99;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 .log-link:hover,
 .log-link:focus {
@@ -521,7 +519,7 @@ background-color: var(--accent-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
