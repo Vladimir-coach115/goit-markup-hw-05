@@ -225,8 +225,6 @@ body {
   background-color: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-  /* background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .open-btn:hover,
 .open-btn:focus {
@@ -235,15 +233,6 @@ body {
 
 /* 2 секция */
 
-/* .section-subtit {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--primary-text-color);
-} */
 .advantages {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -346,13 +335,6 @@ section {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   /* outline: 2px solid green; */
 }
-.excerpt {
-  /* padding-top: 32px;
-  padding-bottom: 32px;
-  padding-right: 16px;
-  padding-left: 16px; */
-  /* outline: 5px solid black; */
-}
 
 .section-subtitle {
   margin-bottom: 8px;
@@ -431,9 +413,6 @@ background-color: var(--accent-color);
   width: calc((100% - 120px) / 6);
   width: 168px;
   height: 88px; 
-  /* padding: 16px 32px; */
-  /* border-radius: 4px;
-  border: 1px solid #8e8f99; */
 }
 .log-link {
   width: 100%;
@@ -458,7 +437,7 @@ background-color: var(--accent-color);
    /*  Подвал  */
 .footer {
   padding: 100px 0;
-  background: var(--primary-text-color);
+  background-color: var(--primary-text-color);
 }
 .social-icons {
   display: flex;
@@ -483,7 +462,7 @@ background-color: var(--accent-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-teamcard);
-  background: var(--primary-text-color);
+  background-color: var(--primary-text-color);
 }
 /* Подвал - соціальні мережі*/
 
@@ -577,40 +556,71 @@ background-color: var(--accent-color);
   border: 1px solid #e7e9fc;
   color: var(--brand-color);
   background-color: var(--color-teamcard);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-link:hover,
 .btn-link:focus {
   color: var(--primary-white-color);
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+/* Our Projects */
+
 .menu { 
 display: flex;
 flex-wrap: wrap;
 column-gap: 24px;
 row-gap: 48px; 
-outline: solid 1px blue;
+/* outline: solid 1px blue; */
 }
 .iteam {
   max-width: 360px;
-  background: var(--primary-white-color);
+  background-color: var(--primary-white-color);
   border: 1px solid #E7E9FC;
   width: calc((100%-48px)/3);
-  outline: solid 2px green;
+  /* outline: solid 2px #008000; */
 }
 
 .pic-link {
   display: block;
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .pic-link:hover,
 .pic-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+.overlay-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  background-color: var(--brand-color);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  color: var(--color-teamcard);
+  font-size: 16px;
+  line-height: 1.5;
+  padding-top: 40px;
+  padding-right: 32px;
+  padding-bottom: 164px;
+  padding-left: 32px;
+  
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.overlay-img:hover .overlay,
+.overlay-img:focus .overlay {
+  transform: translateY(0);
+}
+
 
 .desc {
   padding: 32px 16px;
