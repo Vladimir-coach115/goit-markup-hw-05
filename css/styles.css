@@ -536,7 +536,7 @@ background-color: var(--accent-color);
 }
 .modal {
   width: 408px;
-  height: 576px;
+  min-height: 576px;
   background: #FCFCFC;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -544,7 +544,7 @@ background-color: var(--accent-color);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: var(--transition-duration-and-func);
+  transition: transform var(--transition-duration-and-func);
 }
 .modal-close-btn {
   position: absolute;
