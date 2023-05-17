@@ -49,7 +49,6 @@ img {
   cursor: pointer;
 }
 .container {
-  outline: solid 2px tomato;
   width: 1158px;
   margin-right: auto;
   margin-left: auto;
@@ -67,16 +66,6 @@ body {
 
 
 /*Шапка сторінки */
-
-
- /* .header */
-
-.header {
-  /* z-index: 100; */
-  /* position: fixed;
-  width: 100%; */
-  /* background-color: rgba(49, 208, 170, 0.5); */
-}
 
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -179,14 +168,13 @@ body {
   color: var(--accent-color);
 }
 
-/* 1 секция */
+/* 1 секція */
 
 .background {
   max-width: 1440px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 1px solid black; */
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
   url("../images/people-working.jpg");
   background-repeat: no-repeat;
@@ -228,8 +216,7 @@ body {
   letter-spacing: 0.04em;
   cursor: pointer;
   border: none;
-  min-width: 169px;
-  height: 56px;
+  padding: 16px 32px;
   border-radius: 4px;
   color: var(--primary-white-color) ;
   background-color: var(--brand-color);
@@ -241,7 +228,7 @@ body {
   background-color: var(--accent-color);
 }
 
-/* 2 секция */
+/* 2 секція */
 
 .advantages {
   padding-top: 120px;
@@ -279,9 +266,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
 }
-section {
-  /* outline: solid green; */
-}
+
 
 /* 3 сeкція */
 .section-product {
@@ -354,6 +339,7 @@ section {
   color: var(--primary-text-color);
 }
 .section-text {
+  margin-bottom: 8px;
   text-align: center;
   font-style: normal;
   font-weight: 400;
@@ -395,7 +381,7 @@ background-color: var(--accent-color);
   fill: var(--color-teamcard);
 }
  
-/* 5 секция Customers */
+/* 5 секція Customers */
 
 .customers {
   text-align: center;
@@ -451,10 +437,7 @@ background-color: var(--accent-color);
   display: flex;
   align-items: baseline;
 }
-.footer-logo {
-  margin-right: 120px;
-  /* outline: 2px solid green; */
-}
+
 .map {
   display: inline-block;
   margin-bottom: 16px; 
@@ -476,9 +459,7 @@ background-color: var(--accent-color);
 /* Подвал - соціальні мережі*/
 
 .footer-social {
-  
   margin-left: 120px;
-  /* outline: 2px solid green; */
 }
 .footer-social-text {
   margin-bottom: 16px;
@@ -493,7 +474,6 @@ background-color: var(--accent-color);
   justify-content: center;
   align-items: center;
   gap: 16px;
-  /* outline: 2px solid yellow; */
 }
 .footer-social-list {
   width: 40px;
@@ -607,7 +587,6 @@ background-color: var(--accent-color);
 /* Кнопки Portfolio */
 .btn {
   font-family: "Roboto", sans-serif; 
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -618,6 +597,7 @@ background-color: var(--accent-color);
 }
 
 .btn-link {
+  font-weight: 500;
   padding: 12px 24px;
   border-radius: 4px;
   border: 1px solid #e7e9fc;
@@ -640,14 +620,11 @@ display: flex;
 flex-wrap: wrap;
 column-gap: 24px;
 row-gap: 48px; 
-/* outline: solid 1px blue; */
 }
 .iteam {
   max-width: 360px;
   background-color: var(--primary-white-color);
-  border: 1px solid #E7E9FC;
   width: calc((100%-48px)/3);
-  /* outline: solid 2px #008000; */
 }
 
 .pic-link {
